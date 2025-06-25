@@ -2,7 +2,7 @@
 <configuration>
 	<appender name="FILE"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${LOG_PATH}/${LOG_FILE}.log</file>
+		<file>logs/app.log</file>
 		 <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
         <fileNamePattern>${LOG_PATH}/archived/log_%d{dd-MM-yyyy}_%i.log</fileNamePattern>
         <maxFileSize>20MB</maxFileSize>
